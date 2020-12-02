@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BHASVIC maths assignments</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assignments.css" />
+  </head>
+  <body>
+    <main>
+      <h1>All BHASVIC Double Maths assignments</h1>
+      <p>
+        All the Double Maths assignments are totally public, but are just
+        unlinked on Moodle. All links on this page go directly to Moodle, so
+        please make sure you're signed in before clicking them (or they will
+        redirect you to the sign in page).
+      </p>
+      <p>
+        I am not rehosting any content, I repeat,
+        <b>these are all publicly available to BHASVIC&nbsp;students</b>.
+      </p>
+
+      <article>
+        <h2>Links</h2>
+
+        <div id="loading">
+          <div class="loadingIcon"></div>
+          <div class="loadingText">Loading...</div>
+        </div>
+
+        <div id="links" style="display: none"></div>
+      </article>
+    </main>
+
+    <script>
+      // number of assignments
+      const assignmentMax = 21;
+      const linksContainer = document.getElementById("links");
+
+      for (let i = 1; i <= assignmentMax; i++) {
+        linksContainer.insertAdjacentHTML(
+          "beforeend",
+          `<a href="https://bhasvle.bhasvic.ac.uk/pluginfile.php/83065/mod_page/content/206/DBLS%20Assignment%20${i}A.pdf" target="_blank" rel="noopener noreferrer">${i}A</a>`
+        );
+        linksContainer.insertAdjacentHTML(
+          "beforeend",
+          `<a href="https://bhasvle.bhasvic.ac.uk/pluginfile.php/83065/mod_page/content/206/DBLS%20Assignment%20${i}B.pdf" target="_blank" rel="noopener noreferrer">${i}B</a>`
+        );
+      }
+
+      document.getElementById("loading").remove();
+      linksContainer.style.display = "grid";
+    </script>
+  </body>
+</html>
