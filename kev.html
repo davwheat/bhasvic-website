@@ -8,6 +8,38 @@
       rel="stylesheet"
     />
 
+    <script>
+      // Set up dark mode
+      if (localStorage) {
+        window.__isDark = function () {
+          return localStorage.getItem("dark") === "yes";
+        };
+
+        window.__updateDarkMode = function (e) {
+          localStorage.setItem("dark", e.target.checked ? "yes" : "no");
+          window.__refreshDarkMode();
+        };
+
+        if (!["yes", "no"].includes(localStorage.getItem("dark"))) {
+          // Set default dark mode value
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)")
+            .matches;
+
+          localStorage.setItem("dark", prefersDark ? "yes" : "no");
+        }
+
+        window.__refreshDarkMode = function () {
+          if (__isDark()) {
+            document.documentElement.setAttribute("data-dark", "true");
+          } else {
+            document.documentElement.setAttribute("data-dark", "false");
+          }
+        };
+
+        window.__refreshDarkMode();
+      }
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -80,6 +112,13 @@
         margin: 0;
         padding: 0;
       }
+
+      /* Dark mode styles */
+
+      html[data-dark="true"] {
+        background: #000;
+        color: #fff;
+      }
     </style>
 
     <link rel="canonical" href="https://bhasvic.davwheat.dev/kev" />
@@ -136,7 +175,19 @@
         access a video and I can send you the video file for you to download.
       </p>
       <p><i>Videos are in (rough) chronological order.</i></p>
+
+      <label>
+        <input type="checkbox" id="darkCb" checked />
+        Dark mode
+      </label>
     </header>
+
+    <script>
+      const cb = document.getElementById("darkCb");
+
+      cb.checked = __isDark();
+      cb.addEventListener("change", window.__updateDarkMode);
+    </script>
 
     <main>
       <article id="pure">
