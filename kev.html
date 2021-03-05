@@ -117,6 +117,34 @@
         display: block;
       }
 
+      #loading {
+        margin-top: 64px;
+        margin-bottom: 64px;
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2rem;
+      }
+
+      #loading .spinner {
+        margin: auto;
+        width: 48px;
+        height: 48px;
+        border: 4px solid currentColor;
+        border-radius: 50%;
+        border-top-color: transparent;
+        animation: spin 750ms linear infinite;
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0);
+        }
+        to {
+          transform: rotate(1turn);
+        }
+      }
+
       /* Dark mode styles */
 
       html[data-dark="true"] {
@@ -210,544 +238,12 @@
     </script>
 
     <main>
-      <article id="pure">
-        <header>
-          <h2>Pure</h2>
-          <p>
-            <a href="#mechanics">Jump to mechanics content</a>
-          </p>
-          <p>
-            <a href="#statistics">Jump to statistics content</a>
-          </p>
-        </header>
+      <div id="loading">
+        <div class="spinner"></div>
+        <p>Loading videos...</p>
+      </div>
 
-        <ul>
-          <li>
-            <h4>Pythagorean Identities in equations SE</h4>
-            <a
-              href="https://web.microsoftstream.com/video/83cce92b-50ac-42b3-8fe4-f28594a1cf5b"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/83cce92b-50ac-42b3-8fe4-f28594a1cf5b
-            </a>
-          </li>
-
-          <li>
-            <h4>2D Vector Basics</h4>
-            <a
-              href="https://web.microsoftstream.com/video/ae1b9397-c14c-4851-b068-5a5aa541ad36"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/ae1b9397-c14c-4851-b068-5a5aa541ad36
-            </a>
-          </li>
-
-          <li>
-            <h4>2D Vector Basics 2</h4>
-            <a
-              href="https://web.microsoftstream.com/video/aac9b2b4-af92-4eaf-b930-e4d92708c1b2"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/aac9b2b4-af92-4eaf-b930-e4d92708c1b2
-            </a>
-          </li>
-
-          <li>
-            <h4>Proof by Contradiction 1</h4>
-            <a
-              href="https://web.microsoftstream.com/video/47bbf636-5613-4299-9c47-8363e802cba5"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/47bbf636-5613-4299-9c47-8363e802cba5
-            </a>
-          </li>
-
-          <li>
-            <h4>3D Vectors (1)</h4>
-            <a
-              href="https://web.microsoftstream.com/video/f8c69edb-571e-4691-94c3-9a10c42dee4d"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/f8c69edb-571e-4691-94c3-9a10c42dee4d
-            </a>
-          </li>
-
-          <li>
-            <h4>3D Vectors (2)</h4>
-            <a
-              href="https://web.microsoftstream.com/video/1ffb54ac-029c-444a-87b7-069ef2aac73e"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/1ffb54ac-029c-444a-87b7-069ef2aac73e
-            </a>
-          </li>
-
-          <li>
-            <h4>Chain Rule, Exponentials & Logs</h4>
-            <a
-              href="https://web.microsoftstream.com/video/5d3c004a-e4f4-4c49-97f4-53cd406992ad"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/5d3c004a-e4f4-4c49-97f4-53cd406992ad
-            </a>
-          </li>
-
-          <li>
-            <h4>Chain Rule & Trig</h4>
-            <a
-              href="https://web.microsoftstream.com/video/467fb64e-4f4c-4f7b-9bb8-b1f30ce7f415"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/467fb64e-4f4c-4f7b-9bb8-b1f30ce7f415
-            </a>
-          </li>
-
-          <li>
-            <h4>Chain Rule - Polynomials</h4>
-            <a
-              href="https://web.microsoftstream.com/video/cfe2d642-fae8-49ae-87f1-1f33a88174c4"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/cfe2d642-fae8-49ae-87f1-1f33a88174c4
-            </a>
-          </li>
-
-          <li>
-            <h4>Binomial Expansion - Finite</h4>
-            <a
-              href="https://web.microsoftstream.com/video/8985225d-d4c2-4209-b1e7-e2fba618fb25"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/8985225d-d4c2-4209-b1e7-e2fba618fb25
-            </a>
-          </li>
-
-          <li>
-            <h4>Compound Angle Subject Extension</h4>
-            <a
-              href="https://web.microsoftstream.com/video/a0428e18-a93d-440e-a56c-997632f69238"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/a0428e18-a93d-440e-a56c-997632f69238
-            </a>
-          </li>
-
-          <li>
-            <h4>Quotient Rule Basic Examples</h4>
-            <a
-              href="https://web.microsoftstream.com/video/4db33f6c-fc02-438f-b485-7a92c3128b82"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/4db33f6c-fc02-438f-b485-7a92c3128b82
-            </a>
-          </li>
-
-          <li>
-            <h4>Implicit Differentiation</h4>
-            <a href="https://youtu.be/QKuV_15omtg" target="_blank">
-              https://youtu.be/QKuV_15omtg
-            </a>
-          </li>
-
-          <li>
-            <h4>Implicit Differentiation Remote</h4>
-            <a
-              href="https://web.microsoftstream.com/video/69a2bb6a-a4f4-445d-8f70-11554c8f1b5b"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/69a2bb6a-a4f4-445d-8f70-11554c8f1b5b
-            </a>
-          </li>
-
-          <li>
-            <h4>Integration - Standard Results</h4>
-            <a
-              href="https://web.microsoftstream.com/video/39e94130-762a-4da7-9c7e-76b53f946758"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/39e94130-762a-4da7-9c7e-76b53f946758
-            </a>
-          </li>
-
-          <li>
-            <h4>Integrating Trig Identities</h4>
-            <a
-              href="https://web.microsoftstream.com/video/ca52ffa1-58b4-4943-9abd-40c46c76ebcc"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/ca52ffa1-58b4-4943-9abd-40c46c76ebcc
-            </a>
-          </li>
-
-          <li>
-            <h4>Connected Rates of Change (Tuesday 2nd Feb Lesson 2) (a)</h4>
-            <a
-              href="https://web.microsoftstream.com/video/974c2380-e5ff-42bd-bd86-a1c345f2afa6"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/974c2380-e5ff-42bd-bd86-a1c345f2afa6
-            </a>
-          </li>
-
-          <li>
-            <h4>Connected Rates of Change (Tuesday 2nd Feb Lesson 2) (b)</h4>
-            <a
-              href="https://web.microsoftstream.com/video/6cab15f3-88fa-4fc1-8498-4f7924a5c363"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/6cab15f3-88fa-4fc1-8498-4f7924a5c363
-            </a>
-          </li>
-
-          <li>
-            <h4>Integration - Partial Fractions</h4>
-            <a
-              href="https://web.microsoftstream.com/video/73deabd7-f5a2-4407-9655-1a8ca961a38f"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/73deabd7-f5a2-4407-9655-1a8ca961a38f
-            </a>
-          </li>
-
-          <li>
-            <h4>Integration by subsitution</h4>
-            <a
-              href="https://web.microsoftstream.com/video/0c5aaa2f-23c3-4dc5-bca1-028c0eaaf5ed"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/0c5aaa2f-23c3-4dc5-bca1-028c0eaaf5ed
-            </a>
-          </li>
-
-          <li>
-            <h4>Integration by parts</h4>
-            <a
-              href="https://web.microsoftstream.com/video/a35d0f23-1976-4f21-a9ea-269d1f1290fe"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/a35d0f23-1976-4f21-a9ea-269d1f1290fe
-            </a>
-          </li>
-
-          <li>
-            <h4>Infinite Binomial Exapnsion</h4>
-            <a
-              href="https://web.microsoftstream.com/video/5a342c3a-b6d2-4c59-99ea-d790b92db8f7"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/5a342c3a-b6d2-4c59-99ea-d790b92db8f7
-            </a>
-          </li>
-
-          <li>
-            <h4>Tuesday 9th Feb - Binomial & Partial Fractions</h4>
-            <a
-              href="https://web.microsoftstream.com/video/dd42553e-c105-4b19-b442-e054276be202"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/dd42553e-c105-4b19-b442-e054276be202
-            </a>
-          </li>
-
-          <li>
-            <h4>Binomial 2 - Partial Fractions</h4>
-            <a
-              href="https://web.microsoftstream.com/video/f5732dc1-a2e4-4059-a47c-3cfc9c6f715f"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/f5732dc1-a2e4-4059-a47c-3cfc9c6f715f
-            </a>
-          </li>
-
-          <li>
-            <h4>Tuesday 9th February - Integrating Parametrics</h4>
-            <a
-              href="https://web.microsoftstream.com/video/28c1835e-2493-4ec2-9604-e1c33a84f859"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/28c1835e-2493-4ec2-9604-e1c33a84f859
-            </a>
-          </li>
-
-          <li>
-            <h4>Integration cheat code</h4>
-            <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">
-              https://youtu.be/dQw4w9WgXcQ
-            </a>
-          </li>
-
-          <li>
-            <h4>Integration - Trig & Substitution subject extension</h4>
-            <a
-              href="https://web.microsoftstream.com/video/180e22f5-03d8-4e68-9f06-ae793dc9b17a"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/180e22f5-03d8-4e68-9f06-ae793dc9b17a
-            </a>
-          </li>
-
-          <li>
-            <h4>Cobwebs & Staircases (Thursday 25th February)</h4>
-            <a
-              href="https://web.microsoftstream.com/video/90d1a184-cd5f-42cf-b8f1-b14e1dbd0dc9"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/90d1a184-cd5f-42cf-b8f1-b14e1dbd0dc9
-            </a>
-          </li>
-
-          <li>
-            <h4>Newton Raphson</h4>
-            <a
-              href="https://web.microsoftstream.com/video/00040768-622a-44a3-89f9-d52dafb31cd3"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/00040768-622a-44a3-89f9-d52dafb31cd3
-            </a>
-          </li>
-
-          <li>
-            <h4>Differential Equations</h4>
-            <a
-              href="https://web.microsoftstream.com/video/abe7693b-069f-4ee0-8323-5e2765a747d5"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/abe7693b-069f-4ee0-8323-5e2765a747d5
-            </a>
-          </li>
-
-          <li>
-            <h4>
-              Differential Equations - Modelling (Tuesday 2nd March lesson 2)
-            </h4>
-            <a
-              href="https://web.microsoftstream.com/video/8198fb91-6493-4c76-9907-4f8bb3ec25b2"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/8198fb91-6493-4c76-9907-4f8bb3ec25b2
-            </a>
-          </li>
-
-          <li>
-            <h4>Trapezium Rule</h4>
-            <a
-              href="https://web.microsoftstream.com/video/ca095ea5-e210-4633-a8d5-ae4243801223"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/ca095ea5-e210-4633-a8d5-ae4243801223
-            </a>
-          </li>
-
-          <li>
-            <h4>Differential Equations Skills</h4>
-            <a href="https://youtu.be/oRdm7fROpVs" target="_blank">
-              https://youtu.be/oRdm7fROpVs
-            </a>
-          </li>
-
-          <li>
-            <h4>Arithmetic Progressions</h4>
-            <a
-              href="https://web.microsoftstream.com/video/234d7bdc-3e03-4f2b-9d9e-df3b4c63e3ab"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/234d7bdc-3e03-4f2b-9d9e-df3b4c63e3ab
-            </a>
-          </li>
-
-          <li>
-            <h4>Geometric Progressions</h4>
-            <a
-              href="https://youtu.be/Bjcmw08DPyM"
-              target="_blank"
-            >
-              https://youtu.be/Bjcmw08DPyM
-            </a>
-            <a
-              href="https://web.microsoftstream.com/video/a5aaad25-e581-474f-a5ec-d0b721d84d39"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/a5aaad25-e581-474f-a5ec-d0b721d84d39
-            </a>
-          </li>
-        </ul>
-      </article>
-
-      <article id="mechanics">
-        <header>
-          <h2>Mechanics</h2>
-          <p>
-            <a href="#pure">Jump to pure content</a>
-          </p>
-          <p>
-            <a href="#statistics">Jump to statistics content</a>
-          </p>
-        </header>
-
-        <ul>
-          <li>
-            <h4>Projectiles</h4>
-            <a
-              href="https://web.microsoftstream.com/video/cd5fb08e-0108-42fe-9b86-95b77e642f57"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/cd5fb08e-0108-42fe-9b86-95b77e642f57
-            </a>
-          </li>
-
-          <li>
-            <h4>Equilibrium 1</h4>
-            <a
-              href="https://web.microsoftstream.com/video/87476814-a33d-43bd-8aa0-35eaf2391a26"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/87476814-a33d-43bd-8aa0-35eaf2391a26
-            </a>
-          </li>
-
-          <li>
-            <h4>Vector Kinematics 1</h4>
-            <a
-              href="https://web.microsoftstream.com/video/bea1e51a-2329-43e4-ab7e-cfddd6ff7f57"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/bea1e51a-2329-43e4-ab7e-cfddd6ff7f57
-            </a>
-          </li>
-
-          <li>
-            <h4>Vector Projectiles</h4>
-            <a
-              href="https://web.microsoftstream.com/video/04e49935-487e-4a3f-b9a1-52c6a642cd35"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/04e49935-487e-4a3f-b9a1-52c6a642cd35
-            </a>
-          </li>
-
-          <li>
-            <h4>Connected Particles 1</h4>
-            <a
-              href="https://web.microsoftstream.com/video/975aac9d-4286-4bf5-966f-bb4d222b9627"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/975aac9d-4286-4bf5-966f-bb4d222b9627
-            </a>
-          </li>
-
-          <li>
-            <h4>Newton's 2nd Law (no coefficient of friction)</h4>
-            <a href="https://youtu.be/IePd7G0zpoQ" target="_blank">
-              https://youtu.be/IePd7G0zpoQ
-            </a>
-          </li>
-
-          <li>
-            <h4>Moments 2 (Tuesday 2nd Feb Lesson 1)</h4>
-            <a
-              href="https://web.microsoftstream.com/video/bb20d504-9c5e-4ce2-9ea5-82af362679e4"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/bb20d504-9c5e-4ce2-9ea5-82af362679e4
-            </a>
-          </li>
-
-          <li>
-            <h4>Connected Particles Pulleys</h4>
-            <a href="https://youtu.be/jq2YesidOb4" target="_blank">
-              https://youtu.be/jq2YesidOb4
-            </a>
-          </li>
-        </ul>
-      </article>
-
-      <article id="statistics">
-        <header>
-          <h2>Statistics</h2>
-          <p>
-            <a href="#pure">Jump to pure content</a>
-          </p>
-          <p>
-            <a href="#mechanics">Jump to mechanics content</a>
-          </p>
-        </header>
-
-        <ul>
-          <li>
-            <h4>Independent & Conditional Probability</h4>
-            <a
-              href="https://web.microsoftstream.com/video/82656ee1-9fa4-4d64-a51f-6240d7986c23"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/82656ee1-9fa4-4d64-a51f-6240d7986c23
-            </a>
-          </li>
-
-          <li>
-            <h4>Discrete Random Variables 1</h4>
-            <a
-              href="https://web.microsoftstream.com/video/fd0331c9-3133-4523-885a-87a67c10fcb6"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/fd0331c9-3133-4523-885a-87a67c10fcb6
-            </a>
-          </li>
-
-          <li>
-            <h4>Discrete Random Variables 2</h4>
-            <a
-              href="https://web.microsoftstream.com/video/cd4b2c45-fa60-4f22-8e94-0c08449ff2b3"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/cd4b2c45-fa60-4f22-8e94-0c08449ff2b3
-            </a>
-          </li>
-
-          <li>
-            <h4>Binomial Distribution</h4>
-            <a
-              href="https://web.microsoftstream.com/video/ab6c740c-f694-4ef2-9936-f0769a310d44"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/ab6c740c-f694-4ef2-9936-f0769a310d44
-            </a>
-          </li>
-
-          <li>
-            <h4>Binomial Hypothesis Testing - All Aspects</h4>
-            <a
-              href="https://web.microsoftstream.com/video/8e9496f7-8c0a-4e03-895f-182d31a74b2c"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/8e9496f7-8c0a-4e03-895f-182d31a74b2c
-            </a>
-          </li>
-
-          <li>
-            <h4>Correlation 1</h4>
-            <a href="https://youtu.be/i48dc57Bi9A" target="_blank">
-              https://youtu.be/i48dc57Bi9A
-            </a>
-          </li>
-
-          <li>
-            <h4>Correlation 2</h4>
-            <a href="https://youtu.be/yd9WvxZeiKk" target="_blank">
-              https://youtu.be/yd9WvxZeiKk
-            </a>
-          </li>
-
-          <li>
-            <h4>Thursday 11th February - Normal Hypo Tests</h4>
-            <a
-              href="https://web.microsoftstream.com/video/a811780d-ee16-4891-a7a9-3934fe0c63f2"
-              target="_blank"
-            >
-              https://web.microsoftstream.com/video/a811780d-ee16-4891-a7a9-3934fe0c63f2
-            </a>
-          </li>
-        </ul>
-      </article>
+      <section id="videos"></section>
     </main>
 
     <footer>
@@ -759,5 +255,71 @@
         <p>Hosted and modified by David Wheatley</p>
       </div>
     </footer>
+
+    <script>
+      function createVideo(name, urls) {
+        return `
+        <li>
+          <h4>${name}</h4>
+          ${urls
+            .map(
+              (url) => `
+          <a
+            href="${url}"
+            target="_blank"
+          >
+            ${url}
+          </a>`
+            )
+            .join("")}
+        </li>`;
+      }
+
+      function createTopic(name, id, videoHtml, allTopics) {
+        const otherTopics = allTopics.filter((t) => t.id !== id);
+
+        return `
+        <article id="${id}">
+          <header>
+            <h2>${name}</h2>
+            ${otherTopics
+              .map(
+                (t) => `
+              <p>
+                <a href="#${t.id}">Jump to ${t.name}</a>
+              </p>`
+              )
+              .join("")}
+          </header>
+
+          <ul>
+            ${videoHtml}
+          </ul>
+        </article>`;
+      }
+
+      fetch("/kev-videos.json").then((resp) => {
+        resp.json().then((videos) => {
+          let allHtml = "";
+
+          videos.topics.map((topic) => {
+            const allVideoHtml = topic.videos.reduce(
+              (prev, curr) => `${prev}${createVideo(curr.name, curr.urls)}`,
+              ""
+            );
+
+            allHtml += createTopic(
+              topic.name,
+              topic.id,
+              allVideoHtml,
+              videos.topics
+            );
+          });
+
+          document.getElementById("videos").innerHTML = allHtml;
+          document.getElementById("loading").style.display = "none";
+        });
+      });
+    </script>
   </body>
 </html>
