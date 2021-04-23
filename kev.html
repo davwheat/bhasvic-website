@@ -102,10 +102,13 @@
 
       ul {
         list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
       }
 
       li {
-        margin-bottom: 12px;
+        padding: 8px 6px;
       }
 
       .info p {
@@ -167,6 +170,22 @@
       html[data-dark="true"] a:active {
         color: #f54242;
       }
+
+      .video-list li[data-epa="true"],
+      .epaInfo {
+        outline: 2px solid rgba(255, 200, 0);
+      }
+
+      .epaInfo {
+        padding: 8px 12px;
+        text-align: center;
+        width: max-content;
+        max-width: 100%;
+        margin: auto;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        font-weight: bold;
+      }
     </style>
 
     <link rel="canonical" href="https://bhasvic.davwheat.dev/kev" />
@@ -216,12 +235,19 @@
           Team but have been compiled here for ease of access.
         </strong>
       </p>
+
       <p>
         Contact Milo Mergler on Teams if there is an issue with the website or
         there is a new video you wish to be added to the list. Some of the
         videos may be limited by certain permissions so contact me if you cannot
         access a video and I can send you the video file for you to download.
       </p>
+
+      <p class="epaInfo">
+        Videos surrounded in yellow may be topics on the EPA, or skills required
+        for the EPA.
+      </p>
+
       <p><i>Videos are in (rough) chronological order.</i></p>
 
       <label>
@@ -257,9 +283,9 @@
     </footer>
 
     <script>
-      function createVideo(name, urls) {
+      function createVideo(name, urls, isEpaTopic) {
         return `
-        <li>
+        <li data-epa="${!!isEpaTopic}">
           <h4>${name}</h4>
           ${urls
             .map(
@@ -292,7 +318,7 @@
               .join("")}
           </header>
 
-          <ul>
+          <ul class="video-list">
             ${videoHtml}
           </ul>
         </article>`;
@@ -304,7 +330,8 @@
 
           videos.topics.map((topic) => {
             const allVideoHtml = topic.videos.reduce(
-              (prev, curr) => `${prev}${createVideo(curr.name, curr.urls)}`,
+              (prev, curr) =>
+                `${prev}${createVideo(curr.name, curr.urls, curr.epa)}`,
               ""
             );
 
