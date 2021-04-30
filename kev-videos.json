@@ -366,7 +366,14 @@
             "https://web.microsoftstream.com/video/a811780d-ee16-4891-a7a9-3934fe0c63f2"
           ],
           "epa": true
-        }
+        },
+        {
+          "name": "Normal Distribution SE",
+          "urls": [
+            "https://youtu.be/uyz9paMTuSU"
+          ],
+          "epa": true
+        },
       ]
     }
   ]
