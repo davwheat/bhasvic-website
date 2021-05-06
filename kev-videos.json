@@ -250,6 +250,11 @@
             "https://web.microsoftstream.com/video/c77e6287-ef40-4cfa-9a3c-3b388a8629b5"
           ],
           "epa": true
+        },
+        {
+          "name": "R Method Revision",
+          "urls": ["https://youtu.be/AYpa2rhpOJ4"],
+          "epa": true
         }
       ]
     },
