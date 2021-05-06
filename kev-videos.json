@@ -391,6 +391,13 @@
           "name": "Normal Distribution 5 Sample Means & Hypo Testing",
           "urls": ["https://youtu.be/6S0aA6xpxss"],
           "epa": true
+        },
+        {
+          "name": "Normal Distribution SE",
+          "urls": [
+            "https://youtu.be/uyz9paMTuSU"
+          ],
+          "epa": true
         }
       ]
     }
