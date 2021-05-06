@@ -368,6 +368,31 @@
           "epa": true
         },
         {
+          "name": "Normal Distribution 1 Finding Probabilities",
+          "urls": ["https://youtu.be/paGLxMcZVGY"],
+          "epa": true
+        },
+        {
+          "name": "Normal Distribution 2 Inverse Normal",
+          "urls": ["https://youtu.be/MebHJ0lln6M"],
+          "epa": true
+        },
+        {
+          "name": "Normal Distribution 3 Finding Parameters",
+          "urls": ["https://youtu.be/JH4BzIVCaoI"],
+          "epa": true
+        },
+        {
+          "name": "Normal Distribution 4 Approximating a Binomial",
+          "urls": ["https://youtu.be/a_MwAC_jmwI"],
+          "epa": true
+        },
+        {
+          "name": "Normal Distribution 5 Sample Means & Hypo Testing",
+          "urls": ["https://youtu.be/6S0aA6xpxss"],
+          "epa": true
+        },
+        {
           "name": "Normal Distribution SE",
           "urls": [
             "https://youtu.be/uyz9paMTuSU"
